@@ -1,6 +1,6 @@
 { 
     "version": 2, 
     "name":"progect_deployment", 
-    
+    "builds":[{"src": "main.py", "use":"@vercel/python"}], 
     "routes":[{"src":"/(.*)", "dest":"/main.py"}] 
 }
